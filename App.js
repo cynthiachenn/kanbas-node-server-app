@@ -7,7 +7,7 @@ import ModuleRoutes from './Kanbas/modules/routes.js';
 const app = express()
 app.use(cors({
     credentials: true,
-    origin: [process.env.FRONTEND_URL, "http://localhost:3000"]
+    origin: ["http://localhost:3000", "https://a5--joyful-puffpuff-1c9ea6.netlify.app"]
   }));
 app.use(express.json());
 Lab5(app);
