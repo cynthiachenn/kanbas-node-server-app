@@ -16,7 +16,7 @@ const sessionOptions = {
 };
 
 app.use(cors({
-  credentials: true,
+  credentials: true, 
   origin: [process.env.FRONTEND_URL, "https://a5--joyful-puffpuff-1c9ea6.netlify.app"]
 }));
 if (process.env.NODE_ENV !== "development") {
