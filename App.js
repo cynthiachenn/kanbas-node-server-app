@@ -9,15 +9,16 @@ import ModuleRoutes from './Kanbas/modules/routes.js';
 import UserRoutes from './Users/routes.js';
 import session from 'express-session';
 const app = express()
-app.use(cors({
-  credentials: true,
-  origin: [process.env.FRONTEND_URL, "https://a5--joyful-puffpuff-1c9ea6.netlify.app"]
-}));
 const sessionOptions = {
   secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: false,
 };
+
+app.use(cors({
+  credentials: true,
+  origin: [process.env.FRONTEND_URL, "https://a5--joyful-puffpuff-1c9ea6.netlify.app"]
+}));
 if (process.env.NODE_ENV !== "development") {
   sessionOptions.proxy = true;
   sessionOptions.cookie = {
