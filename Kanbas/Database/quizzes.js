@@ -1,7 +1,6 @@
-export default 
-[
+export default [
     {
-        "_id": "Q1",
+        "id": "Q1",
         "course": "RS101",
         "name": "Quiz 1",
         "available_date": "2024-04-15",
@@ -12,7 +11,7 @@ export default
         "published": false
     },
     {
-        "_id": "Q2",
+        "id": "Q2",
         "course": "RS101",
         "name": "Test",
         "available_date": "2024-04-15",
