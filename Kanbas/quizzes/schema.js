@@ -4,6 +4,7 @@ const quizSchema = mongoose.Schema(
     id: String,
     course: String,
     name: String,
+    description: String,
     available_date: String,
     due_date: String,
     type: String,
