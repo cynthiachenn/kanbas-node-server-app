@@ -20,27 +20,17 @@ export default [
         "published": true,
         "questions": [
             {
+                "id": "Q1",
                 "question": "What is the capital of France?",
                 "points": 10,
-                "type": "multiple-choice"
-            },
-            {
-                "question": "Calculate the force needed...",
-                "points": 20,
-                "type": "numerical"
-            },
-            {
-                "question": "Describe the process of photosynthesis.",
-                "points": 20,
-                "type": "essay"
+                "type": "multiple-choice",
+                "answers": []
             }
         ]
-
     },
     {
         "id": "Q2",
         "course": "RS101",
-        "name": "Test",
         "name": "Weekly Practice Quiz",
         "available_date": "2024-04-26T08:00:00Z",
         "due_date": "2024-05-03T23:59:00Z",
@@ -59,21 +49,12 @@ export default [
         "published": true,
         "questions": [
             {
-                "question": "Which element has the symbol 'Na'?",
+                "id": "Q1",
+                "question": "What is the capital of Spain?",
                 "points": 10,
-                "type": "multiple-choice"
-            },
-            {
-                "question": "What is the square root of 144?",
-                "points": 10,
-                "type": "numerical"
-            },
-            {
-                "question": "Name three types of clouds.",
-                "points": 10,
-                "type": "short-answer"
+                "type": "multiple-choice",
+                "answers": []
             }
         ]
     }
-
 ]
