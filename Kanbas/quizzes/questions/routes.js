@@ -7,9 +7,9 @@ export default function QuestionRoutes(app) {
         res.json(questions);
     };
 
-    const updateQuestion = async (req, res) => {
+    const saveQuestion = async (req, res) => {
         const { quid } = req.params;
-        const status = await dao.updateQuestion(quid, req.body);
+        const status = await dao.saveQuestion(quid, req.body);
         res.json(status);
     };
 
@@ -31,7 +31,7 @@ export default function QuestionRoutes(app) {
 
     app.delete("/api/questions/:quid", deleteQuestion);
     app.post("/api/questions", createQuestion);
-    app.put("/api/questions/:quid", updateQuestion);
+    app.put("/api/questions/:quid", saveQuestion);
     app.get("/api/questions/:quid",findQuestionById);
     app.get("/api/quizzes/:qid/questions", findQuestionsForQuiz);
     ///api/courses/:cid/quizzes/:qid/questions
